@@ -53,7 +53,7 @@ public class CommandTabBuilder {
      * @param candidates 候选项列表
      * @param prefix 前缀（玩家当前输入的内容）
      * @return 匹配前缀的候选项列表
-
+    **/
     private List<String> filterByPrefix(List<String> candidates, String prefix) {
         if (prefix == null || prefix.isEmpty()) {
             return candidates; // 如果没有输入内容，返回所有候选项
