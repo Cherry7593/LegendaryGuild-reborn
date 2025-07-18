@@ -1,0 +1,37 @@
+# 公会列表配置文件
+# Guild List Configuration
+
+# 默认排序方式
+# Available options: ACTIVITY, MEMBERS, LEVEL, TREELEVEL, MONEY, DEFAULT
+# ACTIVITY - 按活跃度排序
+# MEMBERS - 按成员数量排序
+# LEVEL - 按公会等级排序
+# TREELEVEL - 按公会树等级排序
+# MONEY - 按公会资金排序
+# DEFAULT - 默认排序（创建时间）
+default_sort: "ACTIVITY"
+
+# 排序配置
+sort:
+  # 是否启用排序功能
+  enable: true
+
+  # 可用的排序选项（按顺序循环）
+  available_sorts:
+    - "LEVEL"
+    - "MEMBERS"
+    - "ACTIVITY"
+    - "TREELEVEL"
+    - "MONEY"
+    - "DEFAULT"
+
+# 显示配置
+display:
+  # 注意：每页显示的公会数量由菜单布局文件中的layout配置决定
+  # 例如：layout: [20,21,22,23,24,29,30,31,32,33] 表示每页显示10个公会
+
+  # 是否显示排序按钮
+  show_sort_button: true
+
+  # 是否显示翻页按钮
+  show_page_buttons: true
